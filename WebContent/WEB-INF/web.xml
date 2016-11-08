@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <filter>
+    <filter-name>CharacterEncodingFilter</filter-name>
+    <filter-class>cn.ping.web.filter.CharacterEncodingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>CharacterEncodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <filter>
+    <filter-name>HtmlFilter</filter-name>
+    <filter-class>cn.ping.web.filter.HtmlFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>HtmlFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <filter>
+    <filter-name>TransactionFilter</filter-name>
+    <filter-class>cn.ping.web.filter.TransactionFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>TransactionFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <servlet-name>CategoryServlet</servlet-name>
+    <servlet-class>cn.ping.web.manage.CategoryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CategoryServlet</servlet-name>
+    <url-pattern>/manager/CategoryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>BookServlet</servlet-name>
+    <servlet-class>cn.ping.web.manage.BookServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BookServlet</servlet-name>
+    <url-pattern>/manager/BookServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>IndexServlet</servlet-name>
+    <servlet-class>cn.ping.web.client.IndexServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>IndexServlet</servlet-name>
+    <url-pattern>/client/IndexServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+   <servlet>
+    <servlet-name>IndexServlet2</servlet-name>
+    <servlet-class>cn.ping.web.client.IndexServlet2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>IndexServlet2</servlet-name>
+    <url-pattern>/client/IndexServlet2</url-pattern>
+  </servlet-mapping>
+  
+ 
+  <servlet>
+    <servlet-name>CancelServlet</servlet-name>
+    <servlet-class>cn.ping.web.client.CancelServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CancelServlet</servlet-name>
+    <url-pattern>/client/CancelServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>BuyServlet</servlet-name>
+    <servlet-class>cn.ping.web.client.BuyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BuyServlet</servlet-name>
+    <url-pattern>/client/BuyServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>cn.ping.web.client.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/client/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>OrderServlet</servlet-name>
+    <servlet-class>cn.ping.web.client.OrderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrderServlet</servlet-name>
+    <url-pattern>/client/OrderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>cn.ping.web.client.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/client/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>OrderServlet1</servlet-name>
+    <servlet-class>cn.ping.web.manage.OrderServlet1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrderServlet1</servlet-name>
+    <url-pattern>/manager/OrderServlet1</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+    <servlet-name>OrderDetailServelt</servlet-name>
+    <servlet-class>cn.ping.web.client.OrderDetailServelt</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrderDetailServelt</servlet-name>
+    <url-pattern>/client/OrderDetailServelt</url-pattern>
+  </servlet-mapping>
+</web-app>

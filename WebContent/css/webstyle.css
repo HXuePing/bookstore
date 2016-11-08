@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+ 
+}
+a{
+    text-decoration: none;
+}
+h2{
+    color:yellow;
+    float:left;
+    line-height: 45px;
+    margin-left: 40px;
+}
+.header{
+    height:115px;
+    width: 100%;
+    background: gray;
+}
+.header .header-top{
+    height:30px;
+    width: 100%;
+    position: relative;
+    background: gainsboro;
+}
+.header .header-top .text{
+    width:500px;
+    line-height: 30px;
+   right: 2px;
+    position: absolute;
+}
+.nav{
+    background:#f6f6f6;
+    height: 40px;
+    position: relative;
+
+}
+.header .nav li{
+	 float: left;
+}
+
+.header .nav .list{
+    width: 360px;
+    height: 40px;
+    margin: 0 auto;
+      
+}
+
+.header .nav li a{
+    padding: 18px;
+    text-align: center;
+    line-height: 40px;
+    color: black;
+}
+.header .nav li a.on{
+     color:red;
+}
+.header .nav li a:hover{
+     color:red;
+}
+.header .header-logo{
+    height: 45px;
+    width: 100%;
+    background: red;
+    text-align: center;
+}
+
+.line{
+    height: 1px;
+   background: red;
+}
+.main{
+	width: 100%;
+	//border: 1px solid red;
+	margin-top: 20px;
+}
+.main .main-left{
+	width:15%;
+	height:400px;
+	 background:#f6f6f6;
+	 float: left;
+}
+
+.main .main-left .list{
+	text-align: center;
+	line-height: 31px;
+}
+.main .main-left .list li  a{
+	display:block;
+	padding-top: 10px;
+}
+.main .main-left .list a:hover{
+	 color:red;
+}
+.main .main-left .list li:hover{
+	   background: gainsboro;
+	   border-radius: 8px;
+	  
+}
+.main .main-left .list li.on{
+	  color:red;
+	  
+}
+.context{
+	height: 400px;
+	width: 400px;
+	border: 1px solid red; 
+}
+.main .main-right{
+	float: left;
+}
+
+
+/*right.jsp的*/
+#container .main .books .book {
+	float: left;
+	margin-left: 50px;
+	margin-top: 10px;
+}
+#container .main .books .book li{
+	padding: 7px;
+}
+#container .main .books .book li a:hover{
+	color: red;
+}
+#container .main .books .pagebar{
+	text-align: center;
+}
